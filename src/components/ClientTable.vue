@@ -1,7 +1,7 @@
 <template>
     <main>
         <div>
-            <h1>Liste des Clients</h1>
+            <h1>Liste des clients</h1>
             <DataTable :value="data.listeClients" paginator :rows="5" tableStyle="min-width: 50rem">
                 <Column field="code" header="Code" style="width: 25%"></Column>
                 <Column field="societe" header="Société" style="width: 25%"></Column>
@@ -36,7 +36,7 @@ function chargeClients() {
         .catch(showError);
 }
 
-//affichage composant = affichage de la liste
+//affichage composant = affichage liste
 onMounted(chargeClients);
 
 </script>

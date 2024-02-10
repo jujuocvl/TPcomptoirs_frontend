@@ -1,7 +1,7 @@
 <template>
 <div>
 <table>
-  <caption>Liste des catégories</caption>
+  <caption>Liste des clients</caption>
   <tr>
     <th>Code</th>
     <th>Société</th>
@@ -20,10 +20,10 @@
     <td>{{ categorie.adresse.ville }}</td>
   </tr>
   <tr>
-    <td><button type="number" @click="chargeCategories(data.listeLinks.first.href)">first</button></td>
-    <td><button v-if="typeof data.listeLinks.prev !== 'undefined'" type="number" @click="chargeCategories(data.listeLinks.prev.href)">prev</button></td>
-    <td><button v-if="typeof data.listeLinks.next !== 'undefined'" type="number" @click="chargeCategories(data.listeLinks.next.href)">next</button></td>
-    <td><button type="number" @click="chargeCategories(data.listeLinks.last.href)">last</button></td>
+    <td><button type="number" @click="chargeCategories(data.listeLinks.first.href)">Debut</button></td>
+    <td><button v-if="typeof data.listeLinks.prev !== 'undefined'" type="number" @click="chargeCategories(data.listeLinks.prev.href)">Précédente</button></td>
+    <td><button v-if="typeof data.listeLinks.next !== 'undefined'" type="number" @click="chargeCategories(data.listeLinks.next.href)">Suivante</button></td>
+    <td><button type="number" @click="chargeCategories(data.listeLinks.last.href)">Fin</button></td>
 
   </tr>
 </table>
