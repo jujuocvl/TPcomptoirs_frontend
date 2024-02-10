@@ -20,7 +20,7 @@
     <td>{{ categorie.adresse.ville }}</td>
   </tr>
   <tr>
-    <td><button type="number" @click="chargeCategories(data.listeLinks.first.href)">Debut</button></td>
+    <td><button type="number" @click="chargeCategories(data.listeLinks.first.href)">Début</button></td>
     <td><button v-if="typeof data.listeLinks.prev !== 'undefined'" type="number" @click="chargeCategories(data.listeLinks.prev.href)">Précédente</button></td>
     <td><button v-if="typeof data.listeLinks.next !== 'undefined'" type="number" @click="chargeCategories(data.listeLinks.next.href)">Suivante</button></td>
     <td><button type="number" @click="chargeCategories(data.listeLinks.last.href)">Fin</button></td>
